@@ -1,7 +1,12 @@
 "use client";
 
-import Footer from "@/components/footer";
 import Header from "@/components/header";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -411,6 +416,72 @@ export default function HomePage() {
             <CarouselPrevious className="absolute left-2 top-1/2 -translate-y-1/2 z-10 lg:-left-8" />
             <CarouselNext className="absolute right-2 top-1/2 -translate-y-1/2 z-10 lg:-right-8" />
           </Carousel>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-background" id="faq">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+              Find answers to common questions about our scout troupe,
+              activities, and joining process.
+            </p>
+          </div>
+          <Accordion type="single" collapsible className="w-full">
+            <AccordionItem value="item-1">
+              <AccordionTrigger>
+                How do I join the MC Rover Scout Troupe?
+              </AccordionTrigger>
+              <AccordionContent>
+                You can join by visiting our{" "}
+                <a href="/join-us" className="underline text-primary">
+                  Join Us
+                </a>{" "}
+                page and filling out the application form. Our team will contact
+                you with the next steps.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+              <AccordionTrigger>
+                What age groups do you accept?
+              </AccordionTrigger>
+              <AccordionContent>
+                We welcome scouts aged 15 and above. Our programs are tailored
+                for older teens and young adults interested in adventure,
+                leadership, and service.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+              <AccordionTrigger>What activities do you offer?</AccordionTrigger>
+              <AccordionContent>
+                Our troupe offers a variety of activities including camping,
+                hiking, community service, leadership training, environmental
+                projects, and international exchanges.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-4">
+              <AccordionTrigger>
+                Do I need prior experience to join?
+              </AccordionTrigger>
+              <AccordionContent>
+                No prior scouting experience is required! We welcome both
+                newcomers and experienced scouts. Our leaders will guide you
+                every step of the way.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-5">
+              <AccordionTrigger>How can parents get involved?</AccordionTrigger>
+              <AccordionContent>
+                Parents can support by volunteering at events, helping with
+                logistics, or joining our parent committee. Contact us for more
+                information on how to get involved.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
     </main>
