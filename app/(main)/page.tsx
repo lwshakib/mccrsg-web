@@ -55,7 +55,7 @@ export default function HomePage() {
       </section>
 
       {/* Featured Stories Section */}
-      <section className="py-16 bg-background" id="features">
+      <section className="py-16 bg-background" id="featured-stories">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
@@ -252,7 +252,7 @@ export default function HomePage() {
       </section>
 
       {/* Scout Leaders Section */}
-      <section className="py-16 bg-background" id="members">
+      <section className="py-16 bg-background" id="leaders">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">

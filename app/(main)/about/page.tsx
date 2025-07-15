@@ -1,46 +1,60 @@
-type Props = {};
 
-function page({}: Props) {
+import Image from "next/image";
+
+function AboutPage() {
   return (
-    <div className="max-w-2xl mx-auto p-8 mt-[70px]">
-      <h1 className="text-3xl font-bold mb-6">About Our Scout Organization</h1>
-      <img
-        src="https://picsum.photos/seed/scout/800/300"
-        alt="Scouting activity"
-        className="w-full rounded-xl my-6"
+    <div className="max-w-4xl mx-auto p-8 mt-[70px]">
+      <Image
+        width={500}
+        height={500}
+        src="/den.jpg"
+        alt="Den of Murarichand College Rover Scout Group"
+        className="float-left w-96 aspect-video object-cover rounded-lg mr-6 mb-4 shadow"
       />
-      <p className="mb-8">
-        Welcome to our Scout Organization! We are dedicated to empowering young
-        people to make a positive contribution to society. Our mission is to
-        provide fun, adventure, and learning opportunities that help our members
-        develop leadership, teamwork, and outdoor skills.
+      <h1 className="text-3xl font-bold mb-6">
+        Murarichand College Rover Scout Group
+      </h1>
+      <p className="mb-4">
+        The Pakistan-India subcontinent's Scout movement was formed in 1910. In
+        1920, the Bengal Boy Scout Association was recognized. Immediately after
+        the formation of the provincial Scout organization, on February 12,
+        1927, an M. C. College Rover Group was formed. The Rovering journey
+        started with only 14 members. The Rover group was formed under the
+        leadership of Professor P. C. Sanyal M. A.
       </p>
-      <h2 className="text-2xl font-semibold mb-4">Our Values</h2>
-      <ul className="list-disc list-inside mb-8 space-y-2">
-        <li>Respect for others and the environment</li>
-        <li>Personal growth and self-discovery</li>
-        <li>Community service and helping others</li>
-        <li>Adventure and outdoor exploration</li>
+      <p className="mb-4">
+        Murarichand College Rovering registration was on December 2, 1976.
+      </p>
+      <p className="mb-4">The Rover program officially started in 1980.</p>
+      <h2 className="text-2xl font-semibold mb-4">After Registration</h2>
+      <ul className="list-disc list-inside mb-6 space-y-2">
+        <li>
+          The first President of the Rover Scout Group was Professor Hasan
+          Warish.
+        </li>
+        <li>
+          The first Rover Leader of the Rover Scout Group was Abidul Islam.
+        </li>
+        <li>
+          The first Senior Rover Mate of the Rover Scout Group was Ali Azgar
+          Khan.
+        </li>
+        <li>
+          The first Rover Scout Leader of the Rover Scout Group's Girls-in-Rover
+          Unit was Sajia Afrin Khan.
+        </li>
+        <li>
+          The first Senior Rover Mate of the Rover Scout Group's Girls-in-Rover
+          Unit was Shamima Ferdous Nipa.
+        </li>
       </ul>
-      <h2 className="text-2xl font-semibold mb-4">Activities</h2>
-      <p className="mb-8">
-        Our scouts participate in a wide range of activities, including camping,
-        hiking, community service projects, and skill-building workshops. We
-        believe in learning by doing and encourage our members to challenge
-        themselves and try new things.
-      </p>
-      <img
-        src="https://picsum.photos/seed/scout2/600/200"
-        alt="Scouts in action"
-        className="w-full rounded-lg my-6"
-      />
-      <h2 className="text-2xl font-semibold mb-4">Join Us!</h2>
-      <p>
-        If you are interested in joining our scout family or want to learn more,
-        please contact us or visit one of our meetings. Everyone is welcome!
-      </p>
+      <h2 className="text-2xl font-semibold mb-4">Registration Numbers</h2>
+      <ul className="list-disc list-inside mb-6 space-y-2">
+        <li>The Rover Scout Group's registration number is 110/78.</li>
+        <li>The Girls-in-Rover Unit's registration number is 577/71.</li>
+      </ul>
     </div>
   );
 }
 
-export default page;
+export default AboutPage;

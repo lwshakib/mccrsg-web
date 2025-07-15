@@ -1,3 +1,3 @@
-export default function AdminLayout({ children }: { children: React.ReactNode }) {
+export default async function AdminLayout({ children }: { children: React.ReactNode }) {
     return <div>{children}</div>;
 }

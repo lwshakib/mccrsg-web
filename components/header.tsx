@@ -104,14 +104,13 @@ export default function Header() {
                       : "text-white hover:text-gray-100 dark:text-white dark:hover:text-gray-100"
                   }`}
                   onClick={
-                    item.id === "about"
-                      ? undefined
-                      : (e) => {
+                    item.url.includes("#")
+                      ? (e) => {
                           if (pathname === "/") {
                             handleSmoothScroll(e, item.id);
                           }
-                          // If not on home, let Link handle navigation
                         }
+                      : undefined
                   }
                 >
                   {item.label}
@@ -196,3 +195,15 @@ export default function Header() {
     </header>
   );
 }
+// }`}
+//           onClick={
+//             item.id === "about"
+//               ? undefined
+//               : (e) => {
+//                   if (pathname === "/") {
+//                     handleSmoothScroll(e, item.id);
+//                   }
+//                   // If not on home, let Link handle navigation
+//                 }
+//           }
+//         >
