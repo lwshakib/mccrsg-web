@@ -2,6 +2,7 @@
   "name": "mccrsg-web",
   "version": "0.1.0",
   "private": true,
+  "description": "A modern, responsive web application for the MC College Rover Scout Group, built with Next.js 15, TypeScript, and Tailwind CSS. This application serves as the official website for the scout group, featuring a beautiful UI with dark/light mode support and comprehensive functionality.",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
