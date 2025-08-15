@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import scoutLogo from "../public/logo.png";
+import scoutLogo from "../../public/logo.png";
 
 export default function Header() {
   const pathname = usePathname();

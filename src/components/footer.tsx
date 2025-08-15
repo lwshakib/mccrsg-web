@@ -3,7 +3,7 @@ import { navItems } from "@/components/nav-items";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useCallback } from "react";
-import scoutLogo from "../public/logo.png";
+import scoutLogo from "../../public/logo.png";
 
 export default function Footer() {
   const pathname = usePathname();
