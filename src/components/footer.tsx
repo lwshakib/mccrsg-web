@@ -38,7 +38,7 @@ export default function Footer() {
                 className="rounded-lg"
               />
               <span className="ml-3 text-xl font-bold">
-                এমসি রোভার স্কাউট ট্রুপ
+                এমসি রোভার স্কাউট গ্রুপ
               </span>
             </div>
             <p className="text-sm text-muted-foreground">
@@ -180,7 +180,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center text-muted-foreground">
           <p className="text-sm">
-            &copy; {new Date().getFullYear()} এমসি রোভার স্কাউট ট্রুপ।
+            &copy; {new Date().getFullYear()} এমসি রোভার স্কাউট গ্রুপ।
             সর্বস্বত্ব সংরক্ষিত।
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">

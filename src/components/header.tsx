@@ -84,7 +84,7 @@ export default function Header() {
                       : "text-white dark:text-white"
                   }`}
                 >
-                  এমসি রোভার স্কাউট ট্রুপ
+                এমসি রোভার স্কাউট গ্রুপ
                 </span>
               </>
             </Link>
@@ -113,16 +113,7 @@ export default function Header() {
                       : undefined
                   }
                 >
-                  {/* Translate nav item label to Bangla if possible */}
-                  {item.id === "about-us"
-                    ? "আমাদের সম্পর্কে"
-                    : item.id === "join-us"
-                    ? "যোগ দিন"
-                    : item.id === "events"
-                    ? "ইভেন্টসমূহ"
-                    : item.id === "gallery"
-                    ? "গ্যালারি"
-                    : item.label}
+                  {item.label}
                 </Link>
               ))}
             </nav>
@@ -182,16 +173,7 @@ export default function Header() {
                               }
                         }
                       >
-                        {/* Translate nav item label to Bangla if possible */}
-                        {item.id === "about-us"
-                          ? "আমাদের সম্পর্কে"
-                          : item.id === "join-us"
-                          ? "যোগ দিন"
-                          : item.id === "events"
-                          ? "ইভেন্টসমূহ"
-                          : item.id === "gallery"
-                          ? "গ্যালারি"
-                          : item.label}
+                        {item.label}
                       </a>
                     ))}
                   </nav>

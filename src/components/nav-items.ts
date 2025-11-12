@@ -1,6 +1,8 @@
 export const navItems = [
   { id: "about-us", label: "আমাদের সম্পর্কে", url: "/about-us" },
-  { id: "our-achievements", label: "আমাদের অর্জন", url: "/#featured-stories" },
-  { id: "our-leaders", label: "নেতারা", url: "/#leaders" },
-  { id: "join-us", label: "আমাদের সাথে যোগ দিন", url: "/join-us" },
+  { id: "activities", label: "কার্যক্রম", url: "/activities" },
+  { id: "events", label: "ইভেন্টসমূহ", url: "/events" },
+  { id: "gallery", label: "গ্যালারি", url: "/gallery" },
+  { id: "join-us", label: "যোগ দিন", url: "/join-us" },
+  { id: "contact", label: "যোগাযোগ", url: "/contact" },
 ];
